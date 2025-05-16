@@ -1,16 +1,13 @@
 package com.Pluralsight;
 
 public class House extends Asset{
-
     private String address;
     private int condition;
     private int squareFoot;
     private int lotSize;
-
     public House(String description, String dateAcquired, double originalCost) {
         super(description, dateAcquired, originalCost);
     }
-
     public House(String description, String dateAcquired, double originalCost, String address, int condition, int squareFoot, int lotSize) {
         super(description, dateAcquired, originalCost);
         this.address = address;
@@ -18,7 +15,6 @@ public class House extends Asset{
         this.squareFoot = squareFoot;
         this.lotSize = lotSize;
     }
-
     public String getAddress() {return address;}
 
     public int getCondition() {return condition;}
@@ -43,5 +39,8 @@ public class House extends Asset{
             default -> 80;
         };
         return (squareFoot * pricePerSqFt) + (lotSize * 0.25);
+    }
+    public void house2 (){
+
     }
 }
